@@ -1,10 +1,11 @@
 # name Mohanad ALhayek
 
 #procedure next permutation(a1a2 . . . an: permutation of n
-# -cacluate the target; left number less than right number.
+# Ex 12365
+# -cacluate the target; left number less than right number. which is 3
 # -the smallest of the biggest number on the right of it.(5)
-# -swap them numbers 265----- order them
-# -order the number from the samellest ot the biggest!
+# -swap them numbers the two numbers => 12563
+# -order the rest the number from the samellest ot the biggest! ==> 12536
 
 # just in case you dont like how python prints the list like [n,n1,n2...nn]
 # hers a method that prints like n,n1,n2,n3...nn
@@ -61,7 +62,7 @@ def generatePermuation(bitString):
                     print("Index of target", j ,"value of target" , elements[j])
             else:
                 if debug:
-                    print("could not find target. end of permutation")
+                    print("could not find target.")
         #  find the index of the smallest of the biggest number on the right of j
         if(j != -1):
             for i in range(len(elements)):
@@ -84,7 +85,7 @@ def main():
     while ans:
         print ("""
         1.Get Permutations for bit String
-        2.Generate Permutations for bit of length 10
+        2.Generate Permutations for bit of length 4
         3.Exit/Quit
         """)
         choice=input("What would you like to do? ")
